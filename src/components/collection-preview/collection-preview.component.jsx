@@ -5,6 +5,7 @@ import {
   TitleContainer,
   PreviewContainer
 } from './collection-preview.styles';
+import {withRouter} from 'react-router-dom';
 
 
 const CollectionPreview = ({ title, items, history, match, routeName }) => (
@@ -23,4 +24,4 @@ const CollectionPreview = ({ title, items, history, match, routeName }) => (
 );
 
 
-export default CollectionPreview;
+export default withRouter(CollectionPreview);
